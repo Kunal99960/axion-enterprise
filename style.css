@@ -1,0 +1,525 @@
+/* --- Basic Reset and Fonts --- */
+body {
+    font-family: Arial, sans-serif; /* A clean, corporate font */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth; /* Smooth scrolling for navigation links */
+}
+
+/* --- Utility Class: Container for Centering --- */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- Header and Navigation Styling --- */
+.main-header {
+    background-color: #004d99; /* Deep blue corporate color */
+    color: white;
+    padding: 10px 0;
+    position: fixed; /* Fixed header */
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* --- Hero Section Styling (The Big Banner) --- */
+.hero-section {
+    background: url('images/hero.jpg') no-repeat center center/cover; /* Use your own image */
+    color: white;
+    text-align: center;
+    padding: 150px 0 100px;
+    margin-top: 60px; /* Offset for the fixed header */
+    background-color: #333; /* Fallback color */
+}
+
+.hero-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9900; /* Accent color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #cc7a00;
+}
+
+/* --- General Section Styling --- */
+section {
+    padding: 60px 0;
+}
+
+.about-section {
+    background-color: white;
+    text-align: center;
+}
+
+/* --- Services Card Layout --- */
+.services-section {
+    background-color: #e6e6e6; /* Light gray background */
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* --- Footer Styling --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+/* --- New Styles for Contact and About Pages --- */
+/* Simple input/textarea styling for the contact form */
+.contact-page-content input[type="text"], 
+.contact-page-content input[type="email"], 
+.contact-page-content textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-page-content label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+/* --- Basic Reset and Fonts --- */
+body {
+    font-family: Arial, sans-serif; /* A clean, corporate font */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth; /* Smooth scrolling for navigation links */
+}
+
+/* --- Utility Class: Container for Centering --- */
+.container {
+    width: 80%;
+    max-width: 1200px; /* Limit max width for large screens */
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* --- Header and Navigation Styling --- */
+.main-header {
+    background-color: #004d99; /* Deep blue corporate color */
+    color: white;
+    padding: 10px 0;
+    position: fixed; /* Fixed header */
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header h1 {
+    margin: 0;
+    font-size: 1.8em; /* Adjust company name size */
+}
+
+.main-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.main-header nav a:hover {
+    color: #ff9900; /* Accent color on hover */
+}
+
+/* --- Hero Section Styling (The Big Banner on Index) --- */
+.hero-section {
+    background: url('images/hero.jpg') no-repeat center center/cover; /* Use your own image */
+    color: white;
+    text-align: center;
+    padding: 150px 0 100px;
+    margin-top: 60px; /* Offset for the fixed header */
+    background-color: #333; /* Fallback color */
+}
+
+.hero-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff9900; /* Accent color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #cc7a00;
+}
+
+/* --- General Section Styling --- */
+section {
+    padding: 60px 0;
+}
+
+.about-section {
+    background-color: white;
+    text-align: center;
+}
+
+/* --- Services Card Layout --- */
+.services-section {
+    background-color: #e6e6e6; /* Light gray background */
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.card {
+    flex: 1;
+    min-width: 280px; /* Ensure cards don't get too small */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* --- Footer Styling --- */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* --- NEW STYLES FOR ABOUT US PAGE --- */
+.page-title-section {
+    background-color: #e0e0e0; /* Light grey background for the title band */
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px; /* To prevent being hidden by fixed header */
+}
+
+.section-heading {
+    font-size: 2.8em; /* Larger, bolder text */
+    color: #004d99; /* Deep blue */
+    margin-bottom: 5px;
+    letter-spacing: 2px; /* Spread out letters */
+    text-transform: uppercase;
+}
+
+.sub-heading {
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 0;
+}
+
+.about-page-content {
+    background-color: white;
+    padding: 40px 0;
+}
+
+.about-content-wrapper {
+    display: flex; /* Flexbox for two-column layout */
+    gap: 40px; /* Space between columns */
+    align-items: flex-start; /* Align items to the top */
+    flex-wrap: wrap; /* Allow columns to stack on smaller screens */
+}
+
+.about-image-column {
+    flex: 1; /* Takes equal space, will adjust with flex-basis */
+    min-width: 300px; /* Minimum width before wrapping */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow like the example */
+    border-radius: 8px; /* Slightly rounded corners */
+    overflow: hidden; /* Ensures image corners match div */
+}
+
+.about-text-column {
+    flex: 2; /* Takes more space than the image column */
+    min-width: 300px; /* Minimum width before wrapping */
+    line-height: 1.8; /* Better readability */
+    font-size: 1.1em;
+}
+
+.about-text-column p {
+    margin-bottom: 20px;
+}
+
+.responsive-image {
+    max-width: 100%; /* Image scales down to fit its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove extra space below image */
+    border-radius: 8px; /* Match container border-radius */
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .main-header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-header nav {
+        margin-top: 10px;
+    }
+    .main-header nav a {
+        margin: 0 10px;
+    }
+    .hero-section h2 {
+        font-size: 1.8em;
+    }
+    .service-cards {
+        flex-direction: column; /* Stack cards vertically */
+    }
+    .about-content-wrapper {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
+    .about-image-column, .about-text-column {
+        min-width: 100%; /* Take full width */
+    }
+    .page-title-section {
+        padding-top: 80px; /* Adjust for smaller screens */
+    }
+    .section-heading {
+        font-size: 2em;
+    }
+}
+/* --- NEW STYLES FOR SERVICES GRID PAGE --- */
+
+.services-grid-section {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next row */
+    gap: 30px; /* Space between cards */
+    justify-content: space-between; /* Distributes space for 3 columns */
+}
+
+.service-card {
+    /* Calculate width for 3 columns with gaps */
+    width: calc(33.333% - 20px); 
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden; /* Clips the image to the card's rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px; /* Fixed height for consistent card size */
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the area without distortion */
+}
+
+.service-card h4 {
+    color: #004d99; /* Corporate blue for titles */
+    margin: 15px 10px 5px;
+    font-size: 1.2em;
+}
+
+.service-card p {
+    padding: 0 15px 15px;
+    font-size: 0.95em;
+    color: #555;
+    margin: 0;
+}
+
+/* --- Responsive Adjustments for Services Page --- */
+@media (max-width: 1024px) {
+    .service-card {
+        /* On medium screens, switch to 2 columns */
+        width: calc(50% - 15px); 
+    }
+    .service-grid {
+        justify-content: space-around; /* Better centering for two rows */
+    }
+}
+
+@media (max-width: 600px) {
+    .service-card {
+        /* On small screens (phones), switch to 1 column */
+        width: 100%;
+    }
+}
+/* --- About Brief Section Styling --- */
+.about-brief-section {
+    background-color: white;
+    padding: 60px 0 40px;
+    text-align: center;
+}
+
+.about-brief-section h3 {
+    font-size: 2em;
+    color: #004d99;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.7;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+/* --- Services Cards Home Layout (3 per row) --- */
+.service-cards-home {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap; 
+}
+
+/* Ensure the cards take up one-third of the space */
+.service-cards-home .card {
+    flex: 1;
+    min-width: 250px; 
+    max-width: calc(33.333% - 20px); /* Adjust width to fit 3 per row */
+    padding: 30px;
+}
+
+.small-link {
+    display: inline-block;
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.small-link:hover {
+    color: #cc7a00;
+}
+
+/* Responsive adjustment for 3-card section */
+@media (max-width: 900px) {
+    .service-cards-home {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        gap: 20px;
+    }
+    .service-cards-home .card {
+        max-width: 100%;
+        min-width: unset;
+    }
+}
+/* --- Hero Section Styling (The Big Banner on Index) --- */
+.hero-section {
+    /* KEY CHANGE 1: Set height to 100% of the viewport height */
+    height: 60vh; 
+    
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    
+    /* Remove static margin-top offset */
+    /* margin-top: 60px; */ 
+
+    background-color: #333; 
+    position: relative; 
+    
+    /* KEY CHANGE 2: Use Flexbox to center content vertically */
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: center; /* Centers items horizontally */
+    flex-direction: column; /* Stack container content vertically */
+}
+
+/* Update the .hero-section .container to center the text elements */
+.hero-section .container {
+    position: relative; 
+    z-index: 2;
+    padding: 0; /* Remove top/bottom padding to let flexbox handle spacing */
+    
+    /* Ensures the content inside is centered horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+/* Ensure the fixed header doesn't cover the very top of the content */
+/* We will only apply a margin-top to sections that appear AFTER the full-height hero */
+.about-brief-section {
+    /* Apply the margin to the *next* section */
+    margin-top: 0; 
+    padding-top: 60px; /* Add padding to push the content down if needed */
+}
+
+/* Add a margin to the top of the body itself if needed to prevent scrolling to the top */
+body {
+    /* You may need to add this if the fixed header is causing layout issues */
+    /* padding-top: 60px; */ 
+    /* ... (rest of body styles) ... */
+}
